@@ -7,66 +7,78 @@
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}">
 </head>
-<body>   
-	
-        <ul id="barra">
-            <li><a href="#Fantasy_Color">Fantasy_Color</a></li>
-            <li><a href="#informacion"> Informacion</a></li>   
-        </ul>
+<body>
 
-    <header>
+<div id="barra">
+    <ul>
+        <li><a href="#Fantasy_Color">Fantasy_Color</a></li>
+        <li><a href="#informacion"> Informacion</a></li>
+        <li><a href="#contacto"> Contactos</a></li>   
+    </ul>
+</div>
+
+    <header><br><br>
         {% for imagen in principio %}
              <img src="{{ imagen.foto }}"> 
         {% endfor %}  
     </header>
-    <br></b><nav><h1>KillTrala <br>
+    </b><nav><h1>KillTrala <br>
     Estudio tatto & Fantasy Color!!</h1></nav>
+    
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
+    
+    
     <main>
+
         <div>
-            <br>
-            <h2 id="Fantasy_Color"> !Fantasy Color!</h2>
+            <br><h2 id="Fantasy_Color"> !Fantasy Color!</h2>
                 {% for tintura in tinturas %}
+                    
                     <img src="{{ tintura.imagen }}">
                 {% endfor %}    
             <br>
             <br>
-            
+            <article>
+                    <h2><strong>Convenciones!</strong></h2>
+                        {% for fotos in convenciones %}
+                            <img  src="{{ fotos.imagenes }}">
+                        {% endfor %}
+            </article> 
+    <content id="informacion"><br>
+        <h4> !Estudio Killtrala Tatto.<br><br>
+        Ubicado en la Kintrala con Marcelo Rios, Villa Magdalena Pettit, Colina.</h4>
+            {% for imagen in estudio %}
+                <img src="{{ imagen.imagen }}">
+            {% endfor %}             
+    </content>   
+             
         </div>
+        <hr>
         <br>
         <br>
-        
-            <content id="informacion"><br>
-                <h4> !Estudio Killtrala Tatto.<br>
-                <br>
-                    Ubicado en la Kintrala con Marcelo Rios, Villa Magdalena Pettit, Colina.
-                </h4>
-                    {% for imagen in estudio %}
-                       <img src="{{ imagen.imagen }}">
-                    {% endfor %}
-            </content>    
-        
-        
+       
+        <br>
+         
+            <br>
+    
+</main>
+
         <h3>!diseños realizados¡</h3>
-    	{% for uno in diseñosvarios %}
-    	    <section>
-    	        <img src="{{ uno.fotografia }}">	
+        {% for uno in diseñosvarios %}
+            <section>
+                <img src="{{ uno.fotografia }}">    
             </section>
             {% endfor %}
-    </main>
-    
 
-    <footer>
+    
+    <hr>
+  <footer id="contacto">
         <h1>links de contacto!</h1>
             <a href="https://www.facebook.com/yasmine.naveas">Facebook</a>
-    </footer>
-    	
-    <br>
-                    
+            <a href="https://www.instagram.com/killtralatattoo/">Instagram</a>
+        </footer>
+
 </body>
 </html>

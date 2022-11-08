@@ -1,22 +1,49 @@
 html, body{
+	max-width: 100%;
 	min-height: 100%;
 }
 body{
 	background-color: rgb(242, 0, 0);
     
 }
-ul {
+div ul {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	display: block;
+	overflow: hidden;
+	background-color: #333;
+}
+li {
+	float: left;
+	border-right: 1px solid #bbb;
 }
 
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+article img {
+	display: block;
+	width: 20%;
+	height: 50px;
+	border-style: dashed;
+	box-sizing: unset;
+	margin: 5rem;
+	padding-bottom: 15px;
+
+
+}
 
 header img{
 	width: 100%;
-	height: 350px;
+	height: 550px;
 	border-radius: 15px 55px 80px 55px;
 }
 nav{
@@ -29,37 +56,28 @@ nav{
 	background-image: url(https://cheyennetattoo.com/uploads/media/1400x670/05/295-Hero%20-%201400px%20Maschinen.jpg?v=1-0);
 	background-size: 100%;
 	border-radius: 15px 80px 15px 75px;
+	position: relative;
+	bottom: -120px;
 }
 
 div img {
 	width: 30%;
-	height: 350px;
+	height: 450px;
 	float: right;
 	padding: 1rem;
-	background-color: darkorange;
+	size: 4rem;
+	background-color: red;
 	box-sizing: border-box;
-	margin-right: 20rem;
+	margin-right: 10rem;
 	border-style: solid;
-	border-color: orange;
-	border-radius: 10% 30%;
+	border-color: red;
+	border-radius: 10% 10%;
+	margin: 15rem;
+	display: inline-block;
+	bottom: 50px;
 
 }
 
-section img {
-	width: 20%;
-	height: 250px;
-	box-sizing: border-box;
-	border-style: ridge;
-	border-radius: 10% 50%;
-	border-color: orange;
-	border-radius: 10%;
-	border-width: 5px;
-	margin: 10px;
-	
-
-	
-
-}
 h2 {
 	font-family: cursive;
 	font-weight: 200%;
@@ -67,30 +85,42 @@ h2 {
 	text-shadow: 2px 2px;
 	float: right;
 	margin-right: 20rem;
-	color: green;
+	color: black;
 	height: 100px;
 	weight: 330%;
-	padding: 3rem;
+	padding: 10rem;
+	bottom: -20px;
+	
 }
 
 content img {
-    float: right;
-    width: 30%;
-    height: 250px;
+    width: 100%;
+    height: 650px;
+    margin: 5rem;
+    display: block;
     box-sizing: content-box;
-    border-radius: 30%;
-    padding: 6rem;
-    margin-left: 20rem;
-    margin-right: 6rem;
+    border-radius: 50%;
+    padding: 3rem;
     border-style: groove;
     border-color: orangered;
     border-width: 5%;
 
 }
 
-article img{
-	width: 50%;
-	height: 300px;
+section img {
+	width: 30%;
+	height: 250px;
+	box-sizing: border-box;
+	display: block;
+	border-style: ridge;
+	border-radius: 10% 50%;
+	border-color: orange;
+	border-radius: 10%;
+	border-width: 5px;
+	margin: 3rem;
+	background-image: url(https://previews.123rf.com/images/beholdereye/beholdereye1208/beholdereye120800128/14956934-dise%C3%B1o-de-la-plantilla-incre%C3%ADble-sobre-fondo-rojo-brillante.jpg);
+	
+
 }
 
 
@@ -100,32 +130,38 @@ h3{
     font-weight: 50%;
    
 }
+
+
 footer {
-	background-image: url(https://img.freepik.com/fotos-premium/particulas-brillantes-fuego-sobre-fondo-negro_562847-158.jpg?w=1060);
-    
-}
-
-footer h1{
 	font-family: cursive;
-	font-weight: 200%;
+	font-weight: 500%;
 	color: green;
-
+	width: 100%;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid #bbb;
+    background-image: url(https://img.freepik.com/fotos-premium/particulas-brillantes-fuego-sobre-fondo-negro_562847-158.jpg?w=1060);
 }
+
+
 
 h4 {
 	float: right;
 	margin-right: 20rem;
-	margin-left: 10rem;
+	margin-left: 30rem;
 	padding: 8rem;
 	font-family: fantasy;
 	font-size: 20px;
 	font-weight: 100%;
     box-sizing: content-box;
     letter-spacing: 3px;
-    width: 20%;
-    height: 150px;
+    width: 50%;
+    height: 250px;
     text-transform: uppercase;
     
 }
-
 

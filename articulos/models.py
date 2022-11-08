@@ -40,5 +40,20 @@ class Estudio(models.Model):
 		return self.nombre
 
 
+class Tatuadores(models.Model):
+	nombre = models.CharField(max_length=60)
+	foto = models.ImageField(upload_to='imagenes/')
+	informacion = models.TextField(max_length=300)
+
+	def __str__(self):
+		return self.nombre
+
+
+class Adicional(models.Model):
+	titulo = models.CharField(max_length=60)
+	informacion = models.TextField(max_length=300)
+
+	def __str__(self):
+		return self.titulo
 
 
