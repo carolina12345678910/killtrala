@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}">
 </head>
 <body>
+    
 
 <div id="barra">
     <ul>
@@ -23,8 +24,8 @@
         {% endfor %}  
     </header>
     </b><nav><h1>KillTrala <br>
-    Estudio tatto & Fantasy Color!!</h1></nav>
-    
+    Estudio tatto & Fantasy Color!!</h1>
+     </nav>
     <br>
     <br>
     <br>
@@ -70,6 +71,20 @@
             <section>
                 <img src="{{ uno.fotografia }}">    
             </section>
+            {% endfor %}
+
+                <strong><h1> ¡¡Tatuador!! </h1></strong><br><br><br><br><br>
+
+        <center>
+            {% for imagen in tatuadores %}
+           
+            <section>
+
+                <img src="{{ imagen.foto }}">
+            </section>
+              {{ imagen.nombre }}
+              {{ imagen.informacion }}
+        </center>
             {% endfor %}
 
     
